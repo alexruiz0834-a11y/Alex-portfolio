@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexander Ruiz — Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--  HERO / FLAME INTRO -->
+<section class="hero-section" id="hero">
+
+  <div class="hero-flame-stage" aria-hidden="true">
+    <svg class="hero-flame-filter-defs" width="0" height="0">
+      <filter id="flameTurbulence" x="-50%" y="-50%" width="200%" height="200%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012 0.06" numOctaves="3" seed="7" result="noise">
+          <animate attributeName="baseFrequency" dur="6s" values="0.012 0.06;0.018 0.09;0.012 0.06" repeatCount="indefinite"/>
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="26"/>
+      </filter>
+    </svg>
+
+    <div class="hero-flame-glow"></div>
+
+    <div class="hero-flame-body">
+      <div class="hero-flame-tongue hero-flame-tongue-1"></div>
+      <div class="hero-flame-tongue hero-flame-tongue-2"></div>
+      <div class="hero-flame-tongue hero-flame-tongue-3"></div>
+      <div class="hero-flame-tongue hero-flame-tongue-4"></div>
+      <div class="hero-flame-core"></div>
+    </div>
+
+    <div class="hero-ember" id="heroEmber"></div>
+  </div>
+
+  <div class="hero-content" id="heroContent">
+    <p class="hero-eyebrow">Software Development Student &middot; Albuquerque, NM</p>
+    <h1 class="hero-title">Alexander Ruiz</h1>
+    <p class="hero-subtitle">Bilingual builder turning discipline from the track into clean, dependable code.</p>
+  </div>
+
+  <button class="hero-scroll-cue" id="heroScrollCue" aria-label="Scroll to resume">
+    <span class="hero-scroll-cue-dot"></span>
+    <span class="hero-scroll-cue-label">Scroll</span>
+  </button>
+</section>
+
+<!--NAV-->
+<nav class="site-nav" id="siteNav">
+  <div class="site-nav-container">
+    <a href="#hero" class="site-nav-logo">AR</a>
+    <ul class="site-nav-links">
+      <li><a href="#about" class="site-nav-link">About</a></li>
+      <li><a href="#experience" class="site-nav-link">Experience</a></li>
+      <li><a href="#skills" class="site-nav-link">Skills</a></li>
+      <li><a href="#projects" class="site-nav-link">Projects</a></li>
+      <li><a href="#contact" class="site-nav-link site-nav-link-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="site-main">
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <p class="section-eyebrow">01 &mdash; About</p>
+      <h2 class="section-title">Steady under pressure, clear in two languages.</h2>
+      <p class="about-text">
+        I'm an Associate of Science in Software Development student at Central New Mexico Community
+        College, building toward a career writing clean, maintainable code. Before software, I spent
+        years in customer-facing and leadership roles &mdash; greeting visitors, leading group discussions,
+        and keeping a grocery store's front end running smoothly during its busiest hours. That work
+        taught me the same things good code needs: clear communication, staying organized under
+        pressure, and following through on the details other people rely on.
+      </p>
+      <div class="about-badges">
+        <span class="about-badge">English &amp; Spanish, fluently</span>
+        <span class="about-badge">Central New Mexico Community College</span>
+        <span class="about-badge">Albuquerque, NM</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE -->
+  <section class="experience-section" id="experience">
+    <div class="experience-container">
+      <p class="section-eyebrow">02 &mdash; Experience</p>
+      <h2 class="section-title">Where the discipline came from.</h2>
+
+      <ol class="experience-timeline">
+
+        <li class="experience-item">
+          <span class="experience-marker" aria-hidden="true"></span>
+          <div class="experience-card">
+            <p class="experience-date">2024 &ndash; Present</p>
+            <h3 class="experience-role">Associate of Science, Software Development</h3>
+            <p class="experience-org">Central New Mexico Community College &mdash; Albuquerque, NM</p>
+            <p class="experience-description">Coursework in information literacy and systems, building
+              the foundation for a career in software development.</p>
+          </div>
+        </li>
+
+        <li class="experience-item">
+          <span class="experience-marker" aria-hidden="true"></span>
+          <div class="experience-card">
+            <p class="experience-date">Aug 2025 &ndash; Nov 2025</p>
+            <h3 class="experience-role">Courtesy Clerk</h3>
+            <p class="experience-org">Albertsons Market &mdash; Albuquerque, NM</p>
+            <ul class="experience-list">
+              <li>Delivered consistent customer service across a fast-paced retail floor &mdash; assisting
+                shoppers, bagging groceries, and keeping the store clean and organized.</li>
+              <li>Worked in step with cashiers and fellow clerks to keep daily operations running
+                smoothly during peak hours.</li>
+              <li>Took initiative managing assigned tasks and helping teammates stay on schedule.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="experience-item">
+          <span class="experience-marker" aria-hidden="true"></span>
+          <div class="experience-card">
+            <p class="experience-date">2018 &ndash; Present</p>
+            <h3 class="experience-role">Greeter &amp; Group Leader</h3>
+            <p class="experience-org">Legacy &mdash; Albuquerque, NM</p>
+            <ul class="experience-list">
+              <li>First point of contact for visitors, setting a welcoming, professional tone.</li>
+              <li>Answered questions and gave directions to help people find what they needed.</li>
+              <li>Led group discussions and reflections, guiding collaboration and clear communication.</li>
+              <li>Used digital tools to share information and coordinate group activities.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="experience-item">
+          <span class="experience-marker" aria-hidden="true"></span>
+          <div class="experience-card">
+            <p class="experience-date">2023 &ndash; 2024</p>
+            <h3 class="experience-role">Track Sprinter</h3>
+            <p class="experience-org">Digital Arts Technology Academy &mdash; Albuquerque, NM</p>
+            <ul class="experience-list">
+              <li>Competed on the school track team &mdash; 2nd place as a first-year competitor,
+                3rd place as a sophomore.</li>
+              <li>Built the discipline and commitment that carry directly into how I approach coursework
+                and deadlines today.</li>
+            </ul>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills">
+    <div class="skills-container">
+      <p class="section-eyebrow">03 &mdash; Skills</p>
+      <h2 class="section-title">What I bring to a team.</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <p class="skill-card-title">Customer Service &amp; Guest Relations</p>
+        </div>
+        <div class="skill-card">
+          <p class="skill-card-title">Team Collaboration &amp; Support</p>
+        </div>
+        <div class="skill-card">
+          <p class="skill-card-title">Bilingual Communication (English &amp; Spanish)</p>
+        </div>
+        <div class="skill-card">
+          <p class="skill-card-title">Organization &amp; Time Management</p>
+        </div>
+        <div class="skill-card">
+          <p class="skill-card-title">Leadership &amp; Group Facilitation</p>
+        </div>
+        <div class="skill-card">
+          <p class="skill-card-title">Problem Solving &amp; Critical Thinking</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (empty state) -->
+  <section class="projects-section" id="projects">
+    <div class="projects-container">
+      <p class="section-eyebrow">04 &mdash; Projects</p>
+      <h2 class="section-title">Projects, on the way.</h2>
+      <p class="projects-intro">This section is reserved for the builds coming out of my coursework
+        and personal practice. Check back soon.</p>
+
+      <div class="project-card project-card-empty">
+        <div class="project-card-image" id="projectImageSlot">
+          <!--
+            To add a real project image later, replace this fallback <span> with:
+            <img src="your-image.jpg" alt="Describe the project" class="project-card-img">
+          -->
+          <span class="project-card-image-fallback" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M21 15l-5-5-11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+        <div class="project-card-body">
+          <p class="project-card-eyebrow">Coming soon</p>
+          <h3 class="project-card-title">Project title goes here</h3>
+          <p class="project-card-description">A short description of the project will go here once it's added.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer class="contact-section" id="contact">
+    <div class="contact-container">
+      <p class="section-eyebrow">05 &mdash; Contact</p>
+      <h2 class="section-title">Let's talk.</h2>
+      <div class="contact-links">
+        <a href="mailto:alexruiz0834@gmail.com" class="contact-link">alexruiz0834@gmail.com</a>
+        <a href="tel:5055066744" class="contact-link">505-506-6744</a>
+      </div>
+      <p class="contact-location">Albuquerque, NM</p>
+      <p class="contact-footnote">&copy; <span id="contactYear"></span> Alexander Ruiz. Built by hand.</p>
+    </div>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
